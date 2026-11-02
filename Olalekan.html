@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compliance Record</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f3f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:420px;
+    max-width:100%;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    padding:20px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.header img{
+    width:60px;
+}
+
+.title{
+    text-align:center;
+    flex:1;
+}
+
+.title h2{
+    font-size:23px;
+    font-weight:700;
+    color:#222;
+    line-height:1.2;
+}
+
+.title p{
+    color:#777;
+    margin-top:8px;
+    font-size:14px;
+}
+
+.info{
+    margin-top:25px;
+}
+
+.item{
+    padding:14px 0;
+    border-bottom:1px dashed #ddd;
+}
+
+.item:last-child{
+    border-bottom:none;
+}
+
+.label{
+    font-weight:700;
+    color:#444;
+    font-size:18px;
+}
+
+.value{
+    margin-top:6px;
+    font-size:15px;
+    color:#222;
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+}
+
+.id{
+    color:#888;
+    font-size:16px;
+    margin-bottom:18px;
+}
+
+button{
+    background:#111827;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#000;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="header">
+
+        <img src="Images/LSL.jpg" alt="LSL">
+
+        <div class="title">
+            <h2>Lagos State Safety Commission</h2>
+            <p>Worksite Safety / Compliance Record</p>
+        </div>
+
+        <img src="Images/SL.jpg" alt="SL">
+
+    </div>
+
+    <div class="info">
+
+        <div class="item">
+            <div class="label">Name of Site</div>
+            <div class="value">ALONG OLUGBEYOKUN STREET,
+        ABARANJE IKOTUN LAGOS.</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Site Address</div>
+            <div class="value">ALONG OLUGBEYOKUN STREET,
+        ABARANJE IKOTUN LAGOS.</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Reference</div>
+            <div class="value">LGS/LSC/6062/VOL.XXIV/041</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Date of Issue</div>
+            <div class="value">2026-11-01</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Validity</div>
+            <div class="value">2027-11-01</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Processed by</div>
+            <div class="value">SAFETY AUDIT 1</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Site Contact</div>
+            <div class="value">09130653302</div>
+        </div>
+
+        <div class="item">
+            <div class="label">Phone No.</div>
+            <div class="value">09130653302</div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="id">ID: ZHaTxUPOrzWpyKLBdwXb</div>
+        <button onclick="copyLink()">Copy Link</button>
+    </div>
+
+</div>
+
+<script>
+function copyLink(){
+    navigator.clipboard.writeText(window.location.href);
+    alert("Link copied successfully.");
+}
+</script>
+
+</body>
+</html>
